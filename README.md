@@ -5,7 +5,6 @@ This project has 3 entities ProductType, Product, ShoppingCart.
 - *ProductType: Has the information about a specific product
 - *Product: Is the instance of the product and all it's information is stored in a foreign key linking to ProductType
 - *ShoppingCart: Contains all necssary information for a shopping cart.
-- 
 ---
 
 ### Relationships
