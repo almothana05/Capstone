@@ -79,3 +79,6 @@ All enpoints return string with meesages of the requested API's status.
 - *Description:* Finalizes the purchase and processes payment for the cart (this API assumes the customer has infinite money).
 - *Path Parameter:*
   - cartId: ID of the cart to pay for.
+
+## Notes
+- I faced some difficulties using META-INF/, so for database configs i replaced it with application.properties
