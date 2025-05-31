@@ -5,17 +5,17 @@ This document describes the available endpoints for managing products and shoppi
 ---
 
 ## 📦 Product Endpoints
+All enpoints return string with meesages of the requested API's status.
 
 ### GET /Products/listAll
 
 - *Description:* Retrieves a list of all available products.
-- *Response:* Returns an array of product objects.
 
 ---
 
 ### GET /Products/search?id=&name=
 
-- *Description:* Searches for products by id, name, or both.
+- *Description:* Searches for products by id, name. Note that one name or id must be provided.
 - *Query Parameters:*
   - id (optional): Product ID.
   - name (optional): Product name or keyword.
@@ -31,7 +31,6 @@ This document describes the available endpoints for managing products and shoppi
 - *Path Parameters:*
   - cartId: ID of the cart.
   - productId: ID of the product to add.
-- *Response:* Confirmation of the product being added.
 
 ---
 
@@ -41,7 +40,6 @@ This document describes the available endpoints for managing products and shoppi
 - *Path Parameters:*
   - cartId: ID of the cart.
   - productId: ID of the product to remove.
-- *Response:* Confirmation of the product being removed.
 
 ---
 
@@ -59,7 +57,6 @@ This document describes the available endpoints for managing products and shoppi
 - *Description:* Clears all products from the cart.
 - *Path Parameter:*
   - cartId: ID of the cart to clear.
-- *Response:* Confirmation that the cart has been emptied.
 
 ---
 
@@ -68,12 +65,3 @@ This document describes the available endpoints for managing products and shoppi
 - *Description:* Finalizes the purchase and processes payment for the cart.
 - *Path Parameter:*
   - cartId: ID of the cart to pay for.
-- *Response:* Confirmation of successful payment or failure details.
-
----
-
-## 📘 Notes
-
-- All endpoints assume a RESTful design.
-- Ensure appropriate authentication if needed (not covered in this documentation).
-- Input validation and error responses may vary based on implementation.
