@@ -51,6 +51,11 @@ public class ProductRequestHandler {
         return ans.toString();
     }
 
+    @GetMapping(value = "/search", params = {"id", "name"})
+    public String searchByIdAndName(@RequestParam Long id, @RequestParam String name) {
+        return "Please provide only of id/name and not both";
+    }
+
     @GetMapping(value = "/search")
     public String searchProduct(){
         return "Either id or name is required but not both";
