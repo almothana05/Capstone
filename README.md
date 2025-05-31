@@ -1,6 +1,21 @@
 # Capstone
+## Database
+### Entities description
+This project has 3 entities ProductType, Product, ShoppingCart.
+- *ProductType: Has the information about a specific product
+- *Product: Is the instance of the product and all it's information is stored in a foreign key linking to ProductType
+- *ShoppingCart: Contains all necssary information for a shopping cart.
+- 
+---
 
-This document describes the available endpoints for managing products and shopping carts.
+### Relationships
+This project got 2 relationships between entitites.
+- *Product-ProductType : required manyToOne relationship.
+- *Product-ShoppingCart : optional manyToOne relationship.
+
+## Initial settings
+The project when run should initially make 14 productTypes (if not already existing in data base) and stock 10 products to each product type. all product types can be listed using the APIs.
+There will be 3 shopping carts provided with id's 1,2 and 3(these don't have an api to list them ,so if you face an error and want to check you can either take a look in the database on table "Almothana_Alzahrani_ShoppingCart" or use bean "scDAO" to list them).
 
 ---
 
