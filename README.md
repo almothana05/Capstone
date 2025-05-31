@@ -76,6 +76,6 @@ All enpoints return string with meesages of the requested API's status.
 
 ### PUT /Carts/{cartId}/pay
 
-- *Description:* Finalizes the purchase and processes payment for the cart.
+- *Description:* Finalizes the purchase and processes payment for the cart (this API assumes the customer has infinite money).
 - *Path Parameter:*
   - cartId: ID of the cart to pay for.
