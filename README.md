@@ -1,7 +1,7 @@
 # Capstone
-## Database
+## Database(Postgres)
 ### Entities description
-This project has 3 entities ProductType, Product, ShoppingCart.
+This project has 3 entities ProductType, Product, ShoppingCart(product and productType have been seperated to avoid redundancy).
 - *ProductType: Has the information about a specific product
 - *Product: Is the instance of the product and all it's information is stored in a foreign key linking to ProductType
 - *ShoppingCart: Contains all necssary information for a shopping cart.
